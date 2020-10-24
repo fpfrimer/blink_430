@@ -20,7 +20,7 @@
     modelos, verifique os endereços no datasheet ou no manual da família.
 */
 
-void main(void){
+int main(void){
 	// Ponteiros para os registradores P1DIR e P1OUT
 	volatile unsigned int *p1_dir, *p1_out;
 	
@@ -56,4 +56,5 @@ void main(void){
 		// Inverte o estado do LED
 		*p1_out ^= 0x01;                    
 	}
+	return 0;
 }
